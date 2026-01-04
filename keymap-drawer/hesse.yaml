@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: hesse}
 layers:
-  Base:
+  BASE:
   - Q
   - W
   - E
@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: ⌃}
+  - {t: S, h: ⎇}
+  - {t: D, h: ⌘}
+  - {t: F, h: ⇧}
   - G
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: ⇧}
+  - {t: K, h: ⌘}
+  - {t: L, h: ⎇}
+  - {t: ;, h: ⌃, s: ':'}
   - Z
   - X
   - C
@@ -30,13 +30,165 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - ⌘
-  - ↹
-  - ⌫
-  - ⇧
-  - ⎵
+  - /
+  - {t: ▽, type: trans}
+  - {t: ↹, h: NAV}
+  - {t: ⎵, h: MED}
   - RET
+  - {t: ⌫, h: SYM}
+  - {t: ▽, type: trans}
+  NAV:
+  - BT CLR
+  - '&td0'
+  - '&td0'
+  - '&td4'
+  - '&ind_bat'
+  - KP 7
+  - KP 8
+  - KP 9
+  - +
+  - {t: '=', s: +}
+  - {t: ESC, h: ⌃}
+  - {t: ↖, h: ⎇}
+  - {t: ↑, h: ⌘}
+  - {t: ↘, h: ⇧}
+  - ⇞
+  - KP 4
+  - {t: KP 5, h: ⇧}
+  - {t: KP 6, h: ⌘}
+  - {t: '-', h: ⎇}
+  - {t: _, h: ⌃}
+  - ⌦
+  - ←
+  - ↓
+  - →
+  - ⇟
+  - KP 1
+  - KP 2
+  - KP 3
+  - '*'
+  - '#'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - PP
+  - KP 0
+  - ADJ
+  - {t: ▽, type: trans}
+  SYM:
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - '&'
+  - '*'
+  - (
+  - )
+  - '&td1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+↑
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - $
+  - '%'
+  - ^
+  - ''''
+  - '"'
+  - {t: ▽, type: trans}
+  - '&td2'
+  - Gui+↓
+  - '&td3'
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - '#'
+  - \
+  - {t: ▽, type: trans}
+  - ADJ
+  - {t: ▽, type: trans}
+  - )
+  - {type: held}
+  - {t: ▽, type: trans}
+  ADJ:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - 'VOL
+
+    MUTE'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREV
+  - PP
+  - NEXT
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  MED:
+  - '&td1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&lights_out'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RW
+  - 'VOL
+
+    MUTE'
+  - FF
+  - {t: ▽, type: trans}
+  - Gui+4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREV
+  - PP
+  - NEXT
+  - {t: ▽, type: trans}
+  - Gui+1
+  - Gui+2
+  - Gui+3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 9]
   k: Studio Unlock
