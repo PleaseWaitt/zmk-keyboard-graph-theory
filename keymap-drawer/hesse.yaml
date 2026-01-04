@@ -41,7 +41,7 @@ layers:
   - BT CLR
   - '&td0'
   - '&td0'
-  - '&td4'
+  - {t: ▽, type: trans}
   - '&ind_bat'
   - KP 7
   - KP 8
