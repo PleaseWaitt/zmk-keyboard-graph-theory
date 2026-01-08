@@ -19,6 +19,19 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        // Top left (Q) + top right (P) = &studio_unlock
+        combo_studio_unlock {
+            timeout-ms = <100>;
+            key-positions = <0 9>;
+            bindings = <&studio_unlock>;
+        };
+    };
+};
+
+/ {
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -179,36 +192,6 @@ label= "MED"                               ;
     &trans     &kp C_PREV &kp C_PP   &kp C_NEXT &trans          &kp LG(N1) &kp LG(N2)  &kp LG(N3)      &trans       &trans     
                                  &trans    &trans     &trans          &trans     &trans  &trans
             >;
-        };
-
-        // Empty layers for ZMK Studio:
-        extra1 {
-            status = "reserved";
-        };
-        extra2 {
-            status = "reserved";
-        };
-        extra3 {
-            status = "reserved";
-        };
-        extra4 {
-            status = "reserved";
-        };
-        extra5 {
-            status = "reserved";
-        };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-        // Top left (Q) + top right (P) = &studio_unlock
-        combo_studio_unlock {
-            timeout-ms = <100>;
-            key-positions = <0 9>;
-            bindings = <&studio_unlock>;
         };
     };
 };
